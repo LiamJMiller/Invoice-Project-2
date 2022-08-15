@@ -9,15 +9,17 @@ const countingFunction = function counter() {
     ).innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
   }, 1000);
 };
-
-const openLoginPage = function LoginOpen() {
-  window.open("");
-};
-
-openLoginPage();
 countingFunction();
 
-var opened = window.open("");
-opened.document.write(
-  "<html><head><title>MyTitle</title></head><body>test</body></html>"
-);
+///////////////////////////////////////////////////////////////////
+
+const login = document.querySelector(".login");
+const formLogin = document.querySelector(".login-form");
+
+const loginForm = function loginForm() {
+  login.classList.add("active");
+  login.classList.remove("inactive");
+  formLogin.classList.remove("hide");
+};
+
+// login.addEventListener("click", loginForm);

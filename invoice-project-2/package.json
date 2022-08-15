@@ -20,5 +20,9 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "bourbon": "^7.2.0",
+    "neat": "^2.1.0"
   }
 }
