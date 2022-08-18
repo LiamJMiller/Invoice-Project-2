@@ -25,7 +25,7 @@ const loginForm = function loginForm() {
 // login.addEventListener("click", loginForm);
 
 ////////////////////////////////////////////////////////////////
-var subjectObject = {
+const subjectObject = {
   "Front-end": {
     HTML: ["Links", "Images", "Tables", "Lists"],
     CSS: ["Borders", "Margins", "Backgrounds", "Float"],
@@ -36,11 +36,12 @@ var subjectObject = {
     SQL: ["SELECT", "UPDATE", "DELETE"],
   },
 };
-window.onload = function () {
-  var subjectSel = document.getElementById("subject");
-  var topicSel = document.getElementById("topic");
-  var chapterSel = document.getElementById("chapter");
-  for (var x in subjectObject) {
+
+const subjectObjectFunction = (window.onload = function () {
+  const subjectSel = document.getElementById("subject");
+  const topicSel = document.getElementById("topic");
+  const chapterSel = document.getElementById("chapter");
+  for (const x in subjectObject) {
     subjectSel.options[subjectSel.options.length] = new Option(x, x);
   }
   subjectSel.onchange = function () {
@@ -48,7 +49,7 @@ window.onload = function () {
     chapterSel.length = 1;
     topicSel.length = 1;
     //display correct values
-    for (var y in subjectObject[this.value]) {
+    for (let y in subjectObject[this.value]) {
       topicSel.options[topicSel.options.length] = new Option(y, y);
     }
   };
@@ -56,9 +57,21 @@ window.onload = function () {
     //empty Chapters dropdown
     chapterSel.length = 1;
     //display correct values
-    var z = subjectObject[subjectSel.value][this.value];
-    for (var i = 0; i < z.length; i++) {
+    const z = subjectObject[subjectSel.value][this.value];
+    for (let i = 0; i < z.length; i++) {
       chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
     }
   };
+});
+
+const site = {
+  Site: [],
+};
+
+const shift = {
+  Shift: ["day", "night", "double"],
+};
+
+const pay = {
+  Pay: ["150", "300"],
 };
