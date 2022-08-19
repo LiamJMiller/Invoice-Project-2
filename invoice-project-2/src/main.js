@@ -63,15 +63,3 @@ const subjectObjectFunction = (window.onload = function () {
     }
   };
 });
-
-const site = {
-  Site: [],
-};
-
-const shift = {
-  Shift: ["day", "night", "double"],
-};
-
-const pay = {
-  Pay: ["150", "300"],
-};
