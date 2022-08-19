@@ -14,7 +14,13 @@ html,
 }
 
 body {
-  margin: 0;
+  margin: 25px;
+  /* edits */
+  text-align: center;
+  padding: 50px;
+  border-width: 20px;
+  border-color: black;
+  border-style: double;
 }
 
 h1 {
@@ -138,7 +144,7 @@ progress {
   display: none;
 }
 
-/*  */
+/* REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
 
 /* Dropdown Button */
 .dropbtn {
@@ -194,7 +200,9 @@ progress {
 
 .column {
   float: left;
-  width: 25%;
+  width: 250px;
+  border-width: 1px;
+  border-style: solid;
 }
 
 /* Clear floats after the columns */
