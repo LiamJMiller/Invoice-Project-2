@@ -21,6 +21,7 @@ body {
   border-width: 20px;
   border-color: black;
   border-style: double;
+  background-color: #c0c0c0;
 }
 
 h1 {
@@ -197,6 +198,13 @@ progress {
 }
 
 /* grid layout css */
+
+.grid {
+  width: 66vw;
+  margin-left: 12vw;
+
+  background-color: #7393b3;
+}
 
 .column {
   float: left;
