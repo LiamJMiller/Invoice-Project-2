@@ -63,3 +63,31 @@ const subjectObjectFunction = (window.onload = function () {
     }
   };
 });
+
+const reuseableFunction = (window.onload = function () {
+  const siteSel = document.getElementById("siteDropdown");
+  const shiftSel = document.getElementById("shiftDropdown");
+  const paySel = document.getElementById("payDropdown");
+
+  for (const x in subjectObject) {
+    siteSel.options[siteSel.options.length] = new Option(x, x);
+  }
+  siteSel.onchange = function () {
+    //empty Chapters- and Topics- dropdowns
+    shiftSel.length = 1;
+    paySel.length = 1;
+    //display correct values
+    for (let y in subjectObject[this.value]) {
+      shiftSel.options[shiftSel.options.length] = new Option(y, y);
+    }
+  };
+  shiftSel.onchange = function () {
+    //empty Chapters dropdown
+    paySel.length = 1;
+    //display correct values
+    const z = subjectObject[siteSel.value][this.value];
+    for (let i = 0; i < z.length; i++) {
+      paySel.options[paySel.options.length] = new Option(z[i], z[i]);
+    }
+  };
+});

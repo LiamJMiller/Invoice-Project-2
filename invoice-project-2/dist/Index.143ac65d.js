@@ -183,6 +183,37 @@ var subjectObjectFunction = window.onload = function () {
     }
   };
 };
+
+var reuseableFunction = window.onload = function () {
+  var siteSel = document.getElementById("siteDropdown");
+  var shiftSel = document.getElementById("shiftDropdown");
+  var paySel = document.getElementById("payDropdown");
+
+  for (var x in subjectObject) {
+    siteSel.options[siteSel.options.length] = new Option(x, x);
+  }
+
+  siteSel.onchange = function () {
+    //empty Chapters- and Topics- dropdowns
+    shiftSel.length = 1;
+    paySel.length = 1; //display correct values
+
+    for (var y in subjectObject[this.value]) {
+      shiftSel.options[shiftSel.options.length] = new Option(y, y);
+    }
+  };
+
+  shiftSel.onchange = function () {
+    //empty Chapters dropdown
+    paySel.length = 1; //display correct values
+
+    var z = subjectObject[siteSel.value][this.value];
+
+    for (var i = 0; i < z.length; i++) {
+      paySel.options[paySel.options.length] = new Option(z[i], z[i]);
+    }
+  };
+};
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
