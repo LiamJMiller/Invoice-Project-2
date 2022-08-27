@@ -220,5 +220,32 @@ progress {
   clear: both;
 }
 
+/* css for tables */
+table,
+th,
+td {
+  border: 1px solid;
+  background-color: rgb(255, 255, 255);
+}
+
+table {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+td {
+  background-color: rgb(255, 255, 255);
+}
+
+select {
+  width: 100%;
+  text-align: center;
+}
+
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

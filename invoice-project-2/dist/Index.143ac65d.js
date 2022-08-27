@@ -137,9 +137,9 @@ var loginForm = function loginForm() {
   login.classList.add("active");
   login.classList.remove("inactive");
   formLogin.classList.remove("hide");
-}; // login.addEventListener("click", loginForm);
-////////////////////////////////////////////////////////////////
+};
 
+login.addEventListener("click", loginForm); ////////////////////////////////////////////////////////////////
 
 var subjectObject = {
   "Front-end": {

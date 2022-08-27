@@ -22,7 +22,7 @@ const loginForm = function loginForm() {
   formLogin.classList.remove("hide");
 };
 
-// login.addEventListener("click", loginForm);
+login.addEventListener("click", loginForm);
 
 ////////////////////////////////////////////////////////////////
 const subjectObject = {

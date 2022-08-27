@@ -21,8 +21,11 @@
 <div class="app">
   <form class="Login">
     <h2>Login</h2>
-    <input type="text" placeholder="username">
-    <input type="password" placeholder="password">
+    <input type="text" placeholder="Username">
+    <br>
+    <br>
+    <input type="password" placeholder="Password">
+    <br>
     <button class="button">Login</button>
     <p>Forgot your password?</p>
   </form>
@@ -46,267 +49,8 @@
   <input type="submit" value="Submit" />
 </form> -->
 
-<!-- merging tests -->
-<!-- example of getting the form to work within the grid -->
-<!-- <tr>
-  <form name="form1" id="form1" action="/action_page.php">
-    <td></td>
-    <td>
-      1
-      <select name="subject" id="subject">
-        <option value="" selected="selected">Select subject</option>
-      </select>
-    </td>
-    <td>
-      2
-      <select name="topic" id="topic">
-        <option value="" selected="selected">
-          Please select subject first
-        </option>
-      </select>
-    </td>
-    <td>
-      3
-      <select name="chapter" id="chapter">
-        <option value="" selected="selected">Please select topic first</option>
-      </select>
-    </td>
-    <td>4</td>
-  </form>
-</tr> -->
-
-<br>
-
-<form id="gridTest1">
-  <div class="grid">
-    <div class="row">
-      <div class="column">WeekDay</div>
-      <div class="column">Site</div>
-      <div class="column">Shift</div>
-      <div class="column">Pay</div>
-      <div class="column">Totals</div>
-    </div>
-    <div class="row">
-      <div class="column">Monday</div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
-      <div class="column">4</div>
-    </div>
-    <div class="row">
-      <div class="column">Tuesday</div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
-      <div class="column">4</div>
-    </div>
-    <div class="row">
-      <div class="column">Wednesday</div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
-      <div class="column">4</div>
-    </div>
-    <div class="row">
-      <div class="column">Thursday</div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
-      <div class="column">4</div>
-    </div>
-    <div class="row">
-      <div class="column">Friday</div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
-      <div class="column">4</div>
-    </div>
-    <div class="row">
-      <div class="column">Saturday</div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
-      <div class="column">4</div>
-    </div>
-    <div class="row">
-      <div class="column">Sunday</div>
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
-      <div class="column">4</div>
-    </div>
-    <br>
-  </div>
-  <button class="button">Submit grid</button>
-</form>
-
-<!-- table -->
-<form id="gridTest2">
-  <table class="grid">
-    <tr>
-      <th>WeekDay</th>
-      <th>Site</th>
-      <th>Shift</th>
-      <th>Pay</th>
-      <th>Totals</th>
-    </tr>
-    <tr>
-      <td>Monday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Tuesday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Friday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Saturday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Sunday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-  </table>
-  <input type="submit" value="Submit">
-</form>
-
-<!-- table form intergration testing -->
-<form id="gridTest3">
-  <table class="grid">
-    <tr>
-      <th>WeekDay</th>
-      <th>Site</th>
-      <th>Shift</th>
-      <th>Pay</th>
-      <th>Totals</th>
-    </tr>
-    <tr>
-      <form name="form1" id="form1" action="/action_page.php">
-        <td>Monday</td>
-        <td>
-          1
-          <select name="subject" id="subject">
-            <option value="" selected="selected">Select subject</option>
-          </select>
-        </td>
-        <td>
-          2
-          <select name="topic" id="topic">
-            <option value="" selected="selected">
-              Please select subject first
-            </option>
-          </select>
-        </td>
-        <td>
-          3
-          <select name="chapter" id="chapter">
-            <option value="" selected="selected">
-              Please select topic first
-            </option>
-          </select>
-        </td>
-        <td>4</td>
-      </form>
-    </tr>
-    <tr>
-      <form name="Tuesday" id="Tuesday" action="/action_page.php">
-        <td>Tuesday</td>
-        <td>
-          1
-          <select name="site" id="siteDropdown">
-            <option value="" selected="selected">Select Site</option>
-          </select>
-        </td>
-        <td>
-          2
-          <select name="shift" id="shiftDropdown">
-            <option value="" selected="selected">Select Shift</option>
-          </select>
-        </td>
-        <td>
-          3
-          <select name="Pay" id="payDropdown">
-            <option value="" selected="selected">Select Pay</option>
-          </select>
-        </td>
-        <td>4</td>
-      </form>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Friday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Saturday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Sunday</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-  </table>
-  <input type="submit" value="Submit Table">
-</form>
-
-<!-- SMALL FORMS -->
-
-<form>
+<!-- SMALL FORMS 
+ <form>
   <select>
     <option value="" selected="selected">Select Site</option>
     <option>Waterside Essex</option>
@@ -335,281 +79,284 @@
     <option>300</option>
     <option>Did Not Work</option>
   </select>
-</form>
+</form> -->
 
-<!-- THE GRID LONG METHOD -->
-<table class="grid">
-  <tr>
-    <th>WeekDay</th>
-    <th>Site</th>
-    <th>Shift</th>
-    <th>Pay</th>
-    <th>Totals</th>
-  </tr>
-  <tr>
-    <td>Monday</td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Site</option>
-          <option>Waterside Essex</option>
-          <option>Dunton Court</option>
-          <option>New Forest Glades</option>
-          <option>Milford on sea</option>
-          <option>Leicester</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Shift</option>
-          <option>Day</option>
-          <option>Night</option>
-          <option>Double</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Pay</option>
-          <option>150</option>
-          <option>300</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>Tuesday</td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Site</option>
-          <option>Waterside Essex</option>
-          <option>Dunton Court</option>
-          <option>New Forest Glades</option>
-          <option>Milford on sea</option>
-          <option>Leicester</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Shift</option>
-          <option>Day</option>
-          <option>Night</option>
-          <option>Double</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Pay</option>
-          <option>150</option>
-          <option>300</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>Wednesday</td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Site</option>
-          <option>Waterside Essex</option>
-          <option>Dunton Court</option>
-          <option>New Forest Glades</option>
-          <option>Milford on sea</option>
-          <option>Leicester</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Shift</option>
-          <option>Day</option>
-          <option>Night</option>
-          <option>Double</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Pay</option>
-          <option>150</option>
-          <option>300</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>Thursday</td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Site</option>
-          <option>Waterside Essex</option>
-          <option>Dunton Court</option>
-          <option>New Forest Glades</option>
-          <option>Milford on sea</option>
-          <option>Leicester</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Shift</option>
-          <option>Day</option>
-          <option>Night</option>
-          <option>Double</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Pay</option>
-          <option>150</option>
-          <option>300</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>Friday</td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Site</option>
-          <option>Waterside Essex</option>
-          <option>Dunton Court</option>
-          <option>New Forest Glades</option>
-          <option>Milford on sea</option>
-          <option>Leicester</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Shift</option>
-          <option>Day</option>
-          <option>Night</option>
-          <option>Double</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Pay</option>
-          <option>150</option>
-          <option>300</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>Saturday</td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Site</option>
-          <option>Waterside Essex</option>
-          <option>Dunton Court</option>
-          <option>New Forest Glades</option>
-          <option>Milford on sea</option>
-          <option>Leicester</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Shift</option>
-          <option>Day</option>
-          <option>Night</option>
-          <option>Double</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Pay</option>
-          <option>150</option>
-          <option>300</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>Sunday</td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Site</option>
-          <option>Waterside Essex</option>
-          <option>Dunton Court</option>
-          <option>New Forest Glades</option>
-          <option>Milford on sea</option>
-          <option>Leicester</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Shift</option>
-          <option>Day</option>
-          <option>Night</option>
-          <option>Double</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>
-      <form>
-        <select>
-          <option value="" selected="selected">Select Pay</option>
-          <option>150</option>
-          <option>300</option>
-          <option>Did Not Work</option>
-        </select>
-      </form>
-    </td>
-    <td>4</td>
-  </tr>
-</table>
+<!-- THE Table GRID LONG METHOD -->
+<form>
+  <table class="table">
+    <tr>
+      <th>WeekDay</th>
+      <th>Site</th>
+      <th>Shift</th>
+      <th>Pay</th>
+      <th>Totals</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Site</option>
+            <option>Waterside Essex</option>
+            <option>Dunton Court</option>
+            <option>New Forest Glades</option>
+            <option>Milford on sea</option>
+            <option>Leicester</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Shift</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Double</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Pay</option>
+            <option>150</option>
+            <option>300</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Site</option>
+            <option>Waterside Essex</option>
+            <option>Dunton Court</option>
+            <option>New Forest Glades</option>
+            <option>Milford on sea</option>
+            <option>Leicester</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Shift</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Double</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Pay</option>
+            <option>150</option>
+            <option>300</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Site</option>
+            <option>Waterside Essex</option>
+            <option>Dunton Court</option>
+            <option>New Forest Glades</option>
+            <option>Milford on sea</option>
+            <option>Leicester</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Shift</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Double</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Pay</option>
+            <option>150</option>
+            <option>300</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Site</option>
+            <option>Waterside Essex</option>
+            <option>Dunton Court</option>
+            <option>New Forest Glades</option>
+            <option>Milford on sea</option>
+            <option>Leicester</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Shift</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Double</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Pay</option>
+            <option>150</option>
+            <option>300</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Site</option>
+            <option>Waterside Essex</option>
+            <option>Dunton Court</option>
+            <option>New Forest Glades</option>
+            <option>Milford on sea</option>
+            <option>Leicester</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Shift</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Double</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Pay</option>
+            <option>150</option>
+            <option>300</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Site</option>
+            <option>Waterside Essex</option>
+            <option>Dunton Court</option>
+            <option>New Forest Glades</option>
+            <option>Milford on sea</option>
+            <option>Leicester</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Shift</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Double</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Pay</option>
+            <option>150</option>
+            <option>300</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Site</option>
+            <option>Waterside Essex</option>
+            <option>Dunton Court</option>
+            <option>New Forest Glades</option>
+            <option>Milford on sea</option>
+            <option>Leicester</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Shift</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Double</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form>
+          <select>
+            <option value="" selected="selected">Select Pay</option>
+            <option>150</option>
+            <option>300</option>
+            <option>Did Not Work</option>
+          </select>
+        </form>
+      </td>
+      <td>4</td>
+    </tr>
+  </table>
+  <button class="button">Submit grid</button>
+</form>
