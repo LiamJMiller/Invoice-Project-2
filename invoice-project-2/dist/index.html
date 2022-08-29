@@ -16,18 +16,45 @@
   </body>
 </html>
 
-<!--login form incomplete-->
+<!--login form remodeled to modal-->
+<!-- Button to open the modal login form -->
+<button onclick="document.getElementById('loginID01').style.display='block'">
+  Login
+</button>
 
-<div class="app">
-  <form class="Login">
-    <h2>Login</h2>
-    <input type="text" placeholder="Username">
-    <br>
-    <br>
-    <input type="password" placeholder="Password">
-    <br>
-    <button class="button">Login</button>
-    <p>Forgot your password?</p>
+<!-- The Modal -->
+<div id="loginID01" class="modal">
+  <span onclick="document.getElementById('loginID01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <!-- <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div> -->
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required="">
+      <br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required="">
+      <br>
+
+      <button type="submit">Login</button>
+      <br>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color: #f1f1f1">
+      <button type="button" onclick="document.getElementById('loginID01').style.display='none'" class="cancelbtn">
+        Cancel
+      </button>
+      <span class="psw">Forgot password?</span>
+    </div>
   </form>
 </div>
 
@@ -82,7 +109,7 @@
 </form> -->
 
 <!-- THE Table GRID LONG METHOD -->
-<form>
+<!-- <form>
   <table class="table">
     <tr>
       <th>WeekDay</th>
@@ -359,4 +386,34 @@
     </tr>
   </table>
   <button class="button">Submit grid</button>
-</form>
+</form> -->
+
+<table class="userShifts">
+  <tr>
+    <th>WeekDay</th>
+    <th>Site</th>
+    <th>Shift</th>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>Monday</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+  </tr>
+  <tr>
+    <td>Friday</td>
+  </tr>
+  <tr>
+    <td>Saturday</td>
+  </tr>
+  <tr>
+    <td>Sunday</td>
+  </tr>
+</table>

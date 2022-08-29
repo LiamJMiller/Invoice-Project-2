@@ -140,79 +140,54 @@ var loginForm = function loginForm() {
 };
 
 login.addEventListener("click", loginForm); ////////////////////////////////////////////////////////////////
+// const subjectObject = {
+//   "Front-end": {
+//     HTML: ["Links", "Images", "Tables", "Lists"],
+//     CSS: ["Borders", "Margins", "Backgrounds", "Float"],
+//     JavaScript: ["Variables", "Operators", "Functions", "Conditions"],
+//   },
+//   "Back-end": {
+//     PHP: ["Variables", "Strings", "Arrays"],
+//     SQL: ["SELECT", "UPDATE", "DELETE"],
+//   },
+// };
+// const subjectObjectFunction = (window.onload = function () {
+//   const subjectSel = document.getElementById("subject");
+//   const topicSel = document.getElementById("topic");
+//   const chapterSel = document.getElementById("chapter");
+//   for (const x in subjectObject) {
+//     subjectSel.options[subjectSel.options.length] = new Option(x, x);
+//   }
+//   subjectSel.onchange = function () {
+//     //empty Chapters- and Topics- dropdowns
+//     chapterSel.length = 1;
+//     topicSel.length = 1;
+//     //display correct values
+//     for (let y in subjectObject[this.value]) {
+//       topicSel.options[topicSel.options.length] = new Option(y, y);
+//     }
+//   };
+//   topicSel.onchange = function () {
+//     //empty Chapters dropdown
+//     chapterSel.length = 1;
+//     //display correct values
+//     const z = subjectObject[subjectSel.value][this.value];
+//     for (let i = 0; i < z.length; i++) {
+//       chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+//     }
+//   };
+// });
 
-var subjectObject = {
-  "Front-end": {
-    HTML: ["Links", "Images", "Tables", "Lists"],
-    CSS: ["Borders", "Margins", "Backgrounds", "Float"],
-    JavaScript: ["Variables", "Operators", "Functions", "Conditions"]
-  },
-  "Back-end": {
-    PHP: ["Variables", "Strings", "Arrays"],
-    SQL: ["SELECT", "UPDATE", "DELETE"]
+var hello = "hello"; ////////////////////////////////////////////////////////////////
+// login stuff again
+// Get the modal
+
+var modal = document.getElementById("loginID01"); // When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-};
-
-var subjectObjectFunction = window.onload = function () {
-  var subjectSel = document.getElementById("subject");
-  var topicSel = document.getElementById("topic");
-  var chapterSel = document.getElementById("chapter");
-
-  for (var x in subjectObject) {
-    subjectSel.options[subjectSel.options.length] = new Option(x, x);
-  }
-
-  subjectSel.onchange = function () {
-    //empty Chapters- and Topics- dropdowns
-    chapterSel.length = 1;
-    topicSel.length = 1; //display correct values
-
-    for (var y in subjectObject[this.value]) {
-      topicSel.options[topicSel.options.length] = new Option(y, y);
-    }
-  };
-
-  topicSel.onchange = function () {
-    //empty Chapters dropdown
-    chapterSel.length = 1; //display correct values
-
-    var z = subjectObject[subjectSel.value][this.value];
-
-    for (var i = 0; i < z.length; i++) {
-      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-    }
-  };
-};
-
-var reuseableFunction = window.onload = function () {
-  var siteSel = document.getElementById("siteDropdown");
-  var shiftSel = document.getElementById("shiftDropdown");
-  var paySel = document.getElementById("payDropdown");
-
-  for (var x in subjectObject) {
-    siteSel.options[siteSel.options.length] = new Option(x, x);
-  }
-
-  siteSel.onchange = function () {
-    //empty Chapters- and Topics- dropdowns
-    shiftSel.length = 1;
-    paySel.length = 1; //display correct values
-
-    for (var y in subjectObject[this.value]) {
-      shiftSel.options[shiftSel.options.length] = new Option(y, y);
-    }
-  };
-
-  shiftSel.onchange = function () {
-    //empty Chapters dropdown
-    paySel.length = 1; //display correct values
-
-    var z = subjectObject[siteSel.value][this.value];
-
-    for (var i = 0; i < z.length; i++) {
-      paySel.options[paySel.options.length] = new Option(z[i], z[i]);
-    }
-  };
 };
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -242,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57007" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59865" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
