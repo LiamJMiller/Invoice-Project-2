@@ -188,6 +188,54 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}; // /////////////////////////////////////////////////////////////////
+// IDs for the table
+
+
+var mondayIDs = {
+  monSite: monSite,
+  monShift: monShift,
+  monPay: monPay
+};
+var tuesdayIDs = {
+  tueSite: tueSite,
+  tueShift: tueShift,
+  tuePay: tuePay
+};
+var wednesdayIDs = {
+  wedSite: wedSite,
+  wedShift: wedShift,
+  wedPay: wedPay
+};
+var thursdayIDs = {
+  thuSite: thuSite,
+  thuShift: thuShift,
+  thuPay: thuPay
+};
+var fridayIDs = {
+  friSite: friSite,
+  friShift: friShift,
+  friPay: friPay
+};
+var saturdayIDs = {
+  satSite: satSite,
+  satShift: satShift,
+  satPay: satPay
+};
+var sundayIDs = {
+  sunSite: sunSite,
+  sunShift: sunShift,
+  sunPay: sunPay
+};
+var totalID = totalID;
+var tableIDs = {
+  mondayIDs: mondayIDs,
+  tuesdayIDs: tuesdayIDs,
+  wednesdayIDs: wednesdayIDs,
+  thursdayIDs: thursdayIDs,
+  fridayIDs: fridayIDs,
+  saturdayIDs: saturdayIDs,
+  sundayIDs: sundayIDs
 };
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

@@ -7,6 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="/style.e308ff8e.js"></script></head>
+  <nav>
+    <button onclick="document.getElementById('loginID01').style.display='block'">
+      Login
+    </button>
+  </nav>
+  <br>
   <body>
     <h1>A JavaScript invoice project</h1>
     <a href="https://github.com/LiamJMiller">Click for my github</a>
@@ -17,10 +23,10 @@
 </html>
 
 <!--login form remodeled to modal-->
-<!-- Button to open the modal login form -->
+<!-- Button to open the modal login form >
 <button onclick="document.getElementById('loginID01').style.display='block'">
   Login
-</button>
+</button> -->
 
 <!-- The Modal -->
 <div id="loginID01" class="modal">
@@ -77,7 +83,7 @@
 </form> -->
 
 <!-- SMALL FORMS 
- <form>
+<form id="">
   <select>
     <option value="" selected="selected">Select Site</option>
     <option>Waterside Essex</option>
@@ -89,39 +95,42 @@
   </select>
 </form>
 
-<form>
+<form id="">
   <select>
     <option value="" selected="selected">Select Shift</option>
     <option>Day</option>
     <option>Night</option>
     <option>Double</option>
     <option>Did Not Work</option>
+    <option>Holiday</option>
   </select>
 </form>
 
-<form>
+<form id="">
   <select>
     <option value="" selected="selected">Select Pay</option>
     <option>150</option>
     <option>300</option>
+    <option>450</option>
     <option>Did Not Work</option>
   </select>
 </form> -->
 
 <!-- THE Table GRID LONG METHOD -->
-<!-- <form>
+<form id="invoiceTable">
   <table class="table">
     <tr>
       <th>WeekDay</th>
+      <th>date</th>
       <th>Site</th>
       <th>Shift</th>
-      <th>Pay</th>
-      <th>Totals</th>
+      <th>Rate</th>
     </tr>
     <tr>
       <td>Monday</td>
+      <td>4</td>
       <td>
-        <form>
+        <form id="monSite">
           <select>
             <option value="" selected="selected">Select Site</option>
             <option>Waterside Essex</option>
@@ -134,32 +143,34 @@
         </form>
       </td>
       <td>
-        <form>
+        <form id="monShift">
           <select>
             <option value="" selected="selected">Select Shift</option>
             <option>Day</option>
             <option>Night</option>
             <option>Double</option>
             <option>Did Not Work</option>
+            <option>Holiday</option>
           </select>
         </form>
       </td>
       <td>
-        <form>
+        <form id="monPay">
           <select>
             <option value="" selected="selected">Select Pay</option>
             <option>150</option>
             <option>300</option>
+            <option>450</option>
             <option>Did Not Work</option>
           </select>
         </form>
       </td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Tuesday</td>
+      <td>4</td>
       <td>
-        <form>
+        <form id="tueSite">
           <select>
             <option value="" selected="selected">Select Site</option>
             <option>Waterside Essex</option>
@@ -172,32 +183,35 @@
         </form>
       </td>
       <td>
-        <form>
+        <form id="tueShift">
           <select>
             <option value="" selected="selected">Select Shift</option>
             <option>Day</option>
             <option>Night</option>
             <option>Double</option>
             <option>Did Not Work</option>
+            <option>Holiday</option>
           </select>
         </form>
       </td>
       <td>
-        <form>
+        <form id="tuePay">
           <select>
             <option value="" selected="selected">Select Pay</option>
             <option>150</option>
             <option>300</option>
+            <option>450</option>
+
             <option>Did Not Work</option>
           </select>
         </form>
       </td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Wednesday</td>
+      <td>4</td>
       <td>
-        <form>
+        <form id="wedSite">
           <select>
             <option value="" selected="selected">Select Site</option>
             <option>Waterside Essex</option>
@@ -210,32 +224,36 @@
         </form>
       </td>
       <td>
-        <form>
+        <form id="wedShift">
           <select>
             <option value="" selected="selected">Select Shift</option>
             <option>Day</option>
             <option>Night</option>
             <option>Double</option>
             <option>Did Not Work</option>
+            <option>Holiday</option>
           </select>
         </form>
       </td>
       <td>
-        <form>
+        <form id="wedPay">
           <select>
             <option value="" selected="selected">Select Pay</option>
             <option>150</option>
             <option>300</option>
+            0
+            <option>450</option>
+
             <option>Did Not Work</option>
           </select>
         </form>
       </td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Thursday</td>
+      <td>4</td>
       <td>
-        <form>
+        <form id="ThuSite">
           <select>
             <option value="" selected="selected">Select Site</option>
             <option>Waterside Essex</option>
@@ -248,32 +266,35 @@
         </form>
       </td>
       <td>
-        <form>
+        <form id="ThuShift">
           <select>
             <option value="" selected="selected">Select Shift</option>
             <option>Day</option>
             <option>Night</option>
             <option>Double</option>
             <option>Did Not Work</option>
+            <option>Holiday</option>
           </select>
         </form>
       </td>
       <td>
-        <form>
+        <form id="ThuPay">
           <select>
             <option value="" selected="selected">Select Pay</option>
             <option>150</option>
             <option>300</option>
+            <option>450</option>
+
             <option>Did Not Work</option>
           </select>
         </form>
       </td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Friday</td>
+      <td>4</td>
       <td>
-        <form>
+        <form id="friSite">
           <select>
             <option value="" selected="selected">Select Site</option>
             <option>Waterside Essex</option>
@@ -286,32 +307,35 @@
         </form>
       </td>
       <td>
-        <form>
+        <form id="FriShift">
           <select>
             <option value="" selected="selected">Select Shift</option>
             <option>Day</option>
             <option>Night</option>
             <option>Double</option>
             <option>Did Not Work</option>
+            <option>Holiday</option>
           </select>
         </form>
       </td>
       <td>
-        <form>
+        <form id="FriPay">
           <select>
             <option value="" selected="selected">Select Pay</option>
             <option>150</option>
             <option>300</option>
+            <option>450</option>
+
             <option>Did Not Work</option>
           </select>
         </form>
       </td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Saturday</td>
+      <td>4</td>
       <td>
-        <form>
+        <form id="satSite">
           <select>
             <option value="" selected="selected">Select Site</option>
             <option>Waterside Essex</option>
@@ -324,32 +348,35 @@
         </form>
       </td>
       <td>
-        <form>
+        <form id="satShift">
           <select>
             <option value="" selected="selected">Select Shift</option>
             <option>Day</option>
             <option>Night</option>
             <option>Double</option>
             <option>Did Not Work</option>
+            <option>Holiday</option>
           </select>
         </form>
       </td>
       <td>
-        <form>
+        <form id="satPay">
           <select>
             <option value="" selected="selected">Select Pay</option>
             <option>150</option>
             <option>300</option>
+            <option>450</option>
+
             <option>Did Not Work</option>
           </select>
         </form>
       </td>
-      <td>4</td>
     </tr>
     <tr>
       <td>Sunday</td>
+      <td>4</td>
       <td>
-        <form>
+        <form id="sunSite">
           <select>
             <option value="" selected="selected">Select Site</option>
             <option>Waterside Essex</option>
@@ -362,33 +389,42 @@
         </form>
       </td>
       <td>
-        <form>
+        <form id="sunShift">
           <select>
             <option value="" selected="selected">Select Shift</option>
             <option>Day</option>
             <option>Night</option>
             <option>Double</option>
             <option>Did Not Work</option>
+            <option>Holiday</option>
           </select>
         </form>
       </td>
       <td>
-        <form>
+        <form id="sunPay">
           <select>
             <option value="" selected="selected">Select Pay</option>
             <option>150</option>
             <option>300</option>
+            <option>450</option>
             <option>Did Not Work</option>
           </select>
         </form>
       </td>
-      <td>4</td>
+    </tr>
+    <tr id="totals">
+      <th>Totals -></th>
+      <td>------</td>
+      <td>total Days</td>
+      <td>total Shifts</td>
+      <td>Total Rate</td>
     </tr>
   </table>
   <button class="button">Submit grid</button>
-</form> -->
+</form>
 
-<table class="userShifts">
+<!-- FOR FUTURE USE -->
+<!-- <table class="userShifts">
   <tr>
     <th>WeekDay</th>
     <th>Site</th>
@@ -416,4 +452,4 @@
   <tr>
     <td>Sunday</td>
   </tr>
-</table>
+</table> -->

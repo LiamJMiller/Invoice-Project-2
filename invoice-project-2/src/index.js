@@ -79,3 +79,25 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// /////////////////////////////////////////////////////////////////
+
+// IDs for the table
+const mondayIDs = { monSite, monShift, monPay };
+const tuesdayIDs = { tueSite, tueShift, tuePay };
+const wednesdayIDs = { wedSite, wedShift, wedPay };
+const thursdayIDs = { thuSite, thuShift, thuPay };
+const fridayIDs = { friSite, friShift, friPay };
+const saturdayIDs = { satSite, satShift, satPay };
+const sundayIDs = { sunSite, sunShift, sunPay };
+const totalID = totalID;
+
+const tableIDs = {
+  mondayIDs,
+  tuesdayIDs,
+  wednesdayIDs,
+  thursdayIDs,
+  fridayIDs,
+  saturdayIDs,
+  sundayIDs,
+};

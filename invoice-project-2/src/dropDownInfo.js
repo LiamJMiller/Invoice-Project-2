@@ -14,7 +14,7 @@ const shift = {
 };
 
 const pay = {
-  Pay: ["150", "300", "Did Not Work"],
+  Pay: ["150", "300", "450", "Did Not Work"],
 };
 
 const users = {
@@ -37,34 +37,22 @@ const users = {
   ],
 };
 
-function siteDropdown() {
-  document.getElementById("siteDropdown").classList.toggle("show");
-}
+// IDs for the table
+const mondayIDs = { monSite, monShift, monPay };
+const tuesdayIDs = { tueSite, tueShift, tuePay };
+const wednesdayIDs = { wedSite, wedShift, wedPay };
+const thursdayIDs = { thuSite, thuShift, thuPay };
+const fridayIDs = { friSite, friShift, friPay };
+const saturdayIDs = { satSite, satShift, satPay };
+const sundayIDs = { sunSite, sunShift, sunPay };
+const totalID = totalID;
 
-const reuseableFunction = (window.onload = function () {
-  const siteSel = document.getElementById("siteDropdown");
-  const shiftSel = document.getElementById("shiftDropdown");
-  const paySel = document.getElementById("payDropdown");
-
-  for (const x in site) {
-    siteSel.options[siteSel.options.length] = new Option(x, x);
-  }
-  siteSel.onchange = function () {
-    //empty Chapters- and Topics- dropdowns
-    shiftSel.length = 1;
-    paySel.length = 1;
-    //display correct values
-    for (let y in subjectObject[this.value]) {
-      shiftSel.options[shiftSel.options.length] = new Option(y, y);
-    }
-  };
-  shiftSel.onchange = function () {
-    //empty Chapters dropdown
-    paySel.length = 1;
-    //display correct values
-    const z = subjectObject[siteSel.value][this.value];
-    for (let i = 0; i < z.length; i++) {
-      paySel.options[paySel.options.length] = new Option(z[i], z[i]);
-    }
-  };
-});
+const tableIDs = {
+  mondayIDs,
+  tuesdayIDs,
+  wednesdayIDs,
+  thursdayIDs,
+  fridayIDs,
+  saturdayIDs,
+  sundayIDs,
+};
