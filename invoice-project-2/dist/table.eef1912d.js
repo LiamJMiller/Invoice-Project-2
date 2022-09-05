@@ -178,32 +178,387 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
     <option>Did Not Work</option>
   </select>
 </form> */
-var invoiceTemplate = document.createElement("template");
-invoiceTemplate.innerHTML = "\n  <form id=\"invoiceTable\">\n    <table class=\"table\">\n      <tr>\n        <th>WeekDay</th>\n        <th>date</th>\n        <th>Site</th>\n        <th>Shift</th>\n        <th>Rate</th>\n      </tr>\n      <tr>\n        <td>Monday</td>\n        <td>4</td>\n        <td>\n          <form id=\"monSite\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Site\n              </option>\n              <option>Waterside Essex</option>\n              <option>Dunton Court</option>\n              <option>New Forest Glades</option>\n              <option>Milford on sea</option>\n              <option>Leicester</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"monShift\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Shift\n              </option>\n              <option>Day</option>\n              <option>Night</option>\n              <option>Double</option>\n              <option>Did Not Work</option>\n              <option>Holiday</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"monPay\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Pay\n              </option>\n              <option>150</option>\n              <option>300</option>\n              <option>450</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n      </tr>\n      <tr>\n        <td>Tuesday</td>\n        <td>4</td>\n        <td>\n          <form id=\"tueSite\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Site\n              </option>\n              <option>Waterside Essex</option>\n              <option>Dunton Court</option>\n              <option>New Forest Glades</option>\n              <option>Milford on sea</option>\n              <option>Leicester</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"tueShift\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Shift\n              </option>\n              <option>Day</option>\n              <option>Night</option>\n              <option>Double</option>\n              <option>Did Not Work</option>\n              <option>Holiday</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"tuePay\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Pay\n              </option>\n              <option>150</option>\n              <option>300</option>\n              <option>450</option>\n\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n      </tr>\n      <tr>\n        <td>Wednesday</td>\n        <td>4</td>\n        <td>\n          <form id=\"wedSite\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Site\n              </option>\n              <option>Waterside Essex</option>\n              <option>Dunton Court</option>\n              <option>New Forest Glades</option>\n              <option>Milford on sea</option>\n              <option>Leicester</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"wedShift\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Shift\n              </option>\n              <option>Day</option>\n              <option>Night</option>\n              <option>Double</option>\n              <option>Did Not Work</option>\n              <option>Holiday</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"wedPay\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Pay\n              </option>\n              <option>150</option>\n              <option>300</option>0<option>450</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n      </tr>\n      <tr>\n        <td>Thursday</td>\n        <td>4</td>\n        <td>\n          <form id=\"ThuSite\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Site\n              </option>\n              <option>Waterside Essex</option>\n              <option>Dunton Court</option>\n              <option>New Forest Glades</option>\n              <option>Milford on sea</option>\n              <option>Leicester</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"ThuShift\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Shift\n              </option>\n              <option>Day</option>\n              <option>Night</option>\n              <option>Double</option>\n              <option>Did Not Work</option>\n              <option>Holiday</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"ThuPay\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Pay\n              </option>\n              <option>150</option>\n              <option>300</option>\n              <option>450</option>\n\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n      </tr>\n      <tr>\n        <td>Friday</td>\n        <td>4</td>\n        <td>\n          <form id=\"friSite\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Site\n              </option>\n              <option>Waterside Essex</option>\n              <option>Dunton Court</option>\n              <option>New Forest Glades</option>\n              <option>Milford on sea</option>\n              <option>Leicester</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"FriShift\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Shift\n              </option>\n              <option>Day</option>\n              <option>Night</option>\n              <option>Double</option>\n              <option>Did Not Work</option>\n              <option>Holiday</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"FriPay\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Pay\n              </option>\n              <option>150</option>\n              <option>300</option>\n              <option>450</option>\n\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n      </tr>\n      <tr>\n        <td>Saturday</td>\n        <td>4</td>\n        <td>\n          <form id=\"satSite\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Site\n              </option>\n              <option>Waterside Essex</option>\n              <option>Dunton Court</option>\n              <option>New Forest Glades</option>\n              <option>Milford on sea</option>\n              <option>Leicester</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"satShift\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Shift\n              </option>\n              <option>Day</option>\n              <option>Night</option>\n              <option>Double</option>\n              <option>Did Not Work</option>\n              <option>Holiday</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"satPay\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Pay\n              </option>\n              <option>150</option>\n              <option>300</option>\n              <option>450</option>\n\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n      </tr>\n      <tr>\n        <td>Sunday</td>\n        <td>4</td>\n        <td>\n          <form id=\"sunSite\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Site\n              </option>\n              <option>Waterside Essex</option>\n              <option>Dunton Court</option>\n              <option>New Forest Glades</option>\n              <option>Milford on sea</option>\n              <option>Leicester</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"sunShift\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Shift\n              </option>\n              <option>Day</option>\n              <option>Night</option>\n              <option>Double</option>\n              <option>Did Not Work</option>\n              <option>Holiday</option>\n            </select>\n          </form>\n        </td>\n        <td>\n          <form id=\"sunPay\">\n            <select>\n              <option value=\"\" selected=\"selected\">\n                Select Pay\n              </option>\n              <option>150</option>\n              <option>300</option>\n              <option>450</option>\n              <option>Did Not Work</option>\n            </select>\n          </form>\n        </td>\n      </tr>\n      <tr id=\"totals\">\n        <th>Totals</th>\n        <td>------</td>\n        <td>total Days</td>\n        <td>total Shifts</td>\n        <td>Total Rate</td>\n      </tr>\n    </table>\n    <button class=\"button\">Submit grid</button>\n  </form>\n";
+///////////////////////
+// const invoiceTemplate = document.createElement("template");
+// invoiceTemplate.innerHTML = `
+//   <form id="invoiceTable">
+//     <table class="table">
+//       <tr>
+//         <th>WeekDay</th>
+//         <th>date</th>
+//         <th>Site</th>
+//         <th>Shift</th>
+//         <th>Rate</th>
+//       </tr>
+//       <tr>
+//         <td>Monday</td>
+//         <td>4</td>
+//         <td>
+//           <form id="monSite">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Site
+//               </option>
+//               <option>Waterside Essex</option>
+//               <option>Dunton Court</option>
+//               <option>New Forest Glades</option>
+//               <option>Milford on sea</option>
+//               <option>Leicester</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="monShift">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Shift
+//               </option>
+//               <option>Day</option>
+//               <option>Night</option>
+//               <option>Double</option>
+//               <option>Did Not Work</option>
+//               <option>Holiday</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="monPay">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Pay
+//               </option>
+//               <option>150</option>
+//               <option>300</option>
+//               <option>450</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//       </tr>
+//       <tr>
+//         <td>Tuesday</td>
+//         <td>4</td>
+//         <td>
+//           <form id="tueSite">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Site
+//               </option>
+//               <option>Waterside Essex</option>
+//               <option>Dunton Court</option>
+//               <option>New Forest Glades</option>
+//               <option>Milford on sea</option>
+//               <option>Leicester</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="tueShift">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Shift
+//               </option>
+//               <option>Day</option>
+//               <option>Night</option>
+//               <option>Double</option>
+//               <option>Did Not Work</option>
+//               <option>Holiday</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="tuePay">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Pay
+//               </option>
+//               <option>150</option>
+//               <option>300</option>
+//               <option>450</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//       </tr>
+//       <tr>
+//         <td>Wednesday</td>
+//         <td>4</td>
+//         <td>
+//           <form id="wedSite">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Site
+//               </option>
+//               <option>Waterside Essex</option>
+//               <option>Dunton Court</option>
+//               <option>New Forest Glades</option>
+//               <option>Milford on sea</option>
+//               <option>Leicester</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="wedShift">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Shift
+//               </option>
+//               <option>Day</option>
+//               <option>Night</option>
+//               <option>Double</option>
+//               <option>Did Not Work</option>
+//               <option>Holiday</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="wedPay">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Pay
+//               </option>
+//               <option>150</option>
+//               <option>300</option>0<option>450</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//       </tr>
+//       <tr>
+//         <td>Thursday</td>
+//         <td>4</td>
+//         <td>
+//           <form id="ThuSite">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Site
+//               </option>
+//               <option>Waterside Essex</option>
+//               <option>Dunton Court</option>
+//               <option>New Forest Glades</option>
+//               <option>Milford on sea</option>
+//               <option>Leicester</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="ThuShift">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Shift
+//               </option>
+//               <option>Day</option>
+//               <option>Night</option>
+//               <option>Double</option>
+//               <option>Did Not Work</option>
+//               <option>Holiday</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="ThuPay">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Pay
+//               </option>
+//               <option>150</option>
+//               <option>300</option>
+//               <option>450</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//       </tr>
+//       <tr>
+//         <td>Friday</td>
+//         <td>4</td>
+//         <td>
+//           <form id="friSite">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Site
+//               </option>
+//               <option>Waterside Essex</option>
+//               <option>Dunton Court</option>
+//               <option>New Forest Glades</option>
+//               <option>Milford on sea</option>
+//               <option>Leicester</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="FriShift">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Shift
+//               </option>
+//               <option>Day</option>
+//               <option>Night</option>
+//               <option>Double</option>
+//               <option>Did Not Work</option>
+//               <option>Holiday</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="FriPay">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Pay
+//               </option>
+//               <option>150</option>
+//               <option>300</option>
+//               <option>450</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//       </tr>
+//       <tr>
+//         <td>Saturday</td>
+//         <td>4</td>
+//         <td>
+//           <form id="satSite">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Site
+//               </option>
+//               <option>Waterside Essex</option>
+//               <option>Dunton Court</option>
+//               <option>New Forest Glades</option>
+//               <option>Milford on sea</option>
+//               <option>Leicester</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="satShift">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Shift
+//               </option>
+//               <option>Day</option>
+//               <option>Night</option>
+//               <option>Double</option>
+//               <option>Did Not Work</option>
+//               <option>Holiday</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="satPay">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Pay
+//               </option>
+//               <option>150</option>
+//               <option>300</option>
+//               <option>450</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//       </tr>
+//       <tr>
+//         <td>Sunday</td>
+//         <td>4</td>
+//         <td>
+//           <form id="sunSite">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Site
+//               </option>
+//               <option>Waterside Essex</option>
+//               <option>Dunton Court</option>
+//               <option>New Forest Glades</option>
+//               <option>Milford on sea</option>
+//               <option>Leicester</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="sunShift">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Shift
+//               </option>
+//               <option>Day</option>
+//               <option>Night</option>
+//               <option>Double</option>
+//               <option>Did Not Work</option>
+//               <option>Holiday</option>
+//             </select>
+//           </form>
+//         </td>
+//         <td>
+//           <form id="sunPay">
+//             <select>
+//               <option value="" selected="selected">
+//                 Select Pay
+//               </option>
+//               <option>150</option>
+//               <option>300</option>
+//               <option>450</option>
+//               <option>Did Not Work</option>
+//             </select>
+//           </form>
+//         </td>
+//       </tr>
+//       <tr id="totals">
+//         <th>Totals</th>
+//         <td>------</td>
+//         <td>total Days</td>
+//         <td>total Shifts</td>
+//         <td>Total Rate</td>
+//       </tr>
+//     </table>
+//     <button class="button">Submit grid</button>
+//   </form>
+// `;
+// class invoiceTable extends HTMLTableElement {
+//   constructor() {
+//     super();
+//   }
+//   connectedCallback() {
+//     const shadowRoot = this.attachShadow({ mode: "open" });
+//     shadowRoot.appendChild(invoiceTemplate.content);
+//   }
+// }
+// customElements.define("header-component", Header);
+//////////////////////
+var siteSelector = document.createElement("form");
+siteSelector.innerHTML = "  \n<select>\n<option value=\"\" selected=\"selected\">Select Site</option>\n<option>Waterside Essex</option>\n<option>Dunton Court</option>\n<option>New Forest Glades</option>\n<option>Milford on sea</option>\n<option>Leicester</option>\n<option>Did Not Work</option>\n</select>";
 
-var invoiceTable = /*#__PURE__*/function (_HTMLTableElement) {
-  _inherits(invoiceTable, _HTMLTableElement);
+var siteDropdown = /*#__PURE__*/function (_HTMLElement) {
+  _inherits(siteDropdown, _HTMLElement);
 
-  var _super = _createSuper(invoiceTable);
+  var _super = _createSuper(siteDropdown);
 
-  function invoiceTable() {
-    _classCallCheck(this, invoiceTable);
+  function siteDropdown() {
+    _classCallCheck(this, siteDropdown);
 
     return _super.call(this);
   }
 
-  _createClass(invoiceTable, [{
+  _createClass(siteDropdown, [{
     key: "connectedCallback",
     value: function connectedCallback() {
       var shadowRoot = this.attachShadow({
         mode: "open"
       });
-      shadowRoot.appendChild(invoiceTemplate.content);
+      shadowRoot.appendChild(siteSelector.content);
     }
   }]);
 
-  return invoiceTable;
-}( /*#__PURE__*/_wrapNativeSuper(HTMLTableElement)); // customElements.define("header-component", Header);
+  return siteDropdown;
+}( /*#__PURE__*/_wrapNativeSuper(HTMLElement));
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -232,7 +587,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61129" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65319" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
